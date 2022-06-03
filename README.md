@@ -1,4 +1,4 @@
-# Angular Minicalculadora
+# Angular Minic-calculadora
 
 Píldoras informaticas: Apuntes vídeo I - Práctica guiada I
 
