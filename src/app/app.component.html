@@ -1,3 +1,20 @@
-<h1>Hola {{title}}</h1>
-<br/>
-<app-empleados></app-empleados>
+<div style="margin-top: 50px" class="container">
+    <h1 style="text-align: center;">{{title}}</h1>
+    <br/>
+    <form style="text-align: center;">
+
+    Numero 1: <input type="number" name="numero1" [(ngModel)]="numero1"><br/><br/>
+
+    Numero 2: <input type="number" name="numero2" [(ngModel)]="numero2"><br/><br/>
+
+    <input type="submit" value="sumar" (click)="sumar()" class="btn btn-primary" style="margin-right: 10px;">
+    <input type="submit" value="restar" (click)="restar()" class="btn btn-primary"><br/><br/>
+    <input type="submit" value="multiplicar" (click)="multiplicar()" class="btn btn-primary" style="margin-right: 10px;">
+    <input type="submit" value="dividir" (click)="dividir()" class="btn btn-primary"s><br/><br/>
+
+    </form>
+
+    <p style="text-align: center;">Resultado: {{resultado}}</p>
+</div>
+
+

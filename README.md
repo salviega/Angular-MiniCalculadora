@@ -1,5 +1,6 @@
 # Angular Minicalculadora
-Práctica 
+
+Píldoras informaticas: Apuntes vídeo I - Práctica guiada I
 
 MyApp
 ======
