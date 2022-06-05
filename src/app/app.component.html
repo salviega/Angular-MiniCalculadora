@@ -1,3 +1,5 @@
+
+<!--
 <div style="margin-top: 50px" class="container">
     <h1 style="text-align: center;">{{title}}</h1>
     <br/>
@@ -15,6 +17,39 @@
     </form>
 
     <p style="text-align: center;">Resultado: {{resultado}}</p>
+</div> -->
+
+<div style="margin-top: 50px;" class="container">
+    <h1 style="text-align: center;">{{titulo}}</h1><br/><br/>
+
+    <form>
+        <input type="text" name = "nombre" [(ngModel)]="nombre"><br/><br/>
+        <input type="text" name = "apellido" [(ngModel)]="apellido"><br/><br/>
+        <input type="text" name = "cargo" [(ngModel)]="cargo"><br/><br/>
+        <input type="submit" value = "registro" (click)="registradoUsuario()">
+    </form>
+
+    <br/>
+    <!--- <p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}
+         y tiene el cargo de <span [ngStyle]="{color: cargo=='director' ? 'red' : 'black'}">{{cargo}}</span></p> -->
+        <p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}
+            y tiene el cargo de <span [ngClass]="{paraDirectores: cargo=='director'}">{{cargo}}</span></p>
+    <ng-template #sinRegistrar>
+        <p>Nadie Registrado</p>
+    </ng-template>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <ul>
+        <li *ngFor="let entrada of entradas">
+            {{entrada.titulo}}
+        </li>
+    </ul>
 </div>
+
+
 
 
