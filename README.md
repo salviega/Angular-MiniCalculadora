@@ -1,4 +1,4 @@
-# Angular-Mini calculadora
+# Angular-Mini Calculadora
 
 Píldoras informaticas: Apuntes vídeo I - Práctica guiada I
 
